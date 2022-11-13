@@ -14,3 +14,16 @@ https://docs.google.com/presentation/d/1WDA2vK0gLKRWymFdBV8sZedaHojQjqhOkoMfv2_4
 
 # Roadmap
 https://innovationprojekt1.atlassian.net/jira/software/projects/BDP/boards/6/roadmap
+
+
+# Docker
+- CouchDB Docker Installation:
+
+    - docker pull couchdb
+    
+    - docker run -d --name mycouchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password couchdb
+
+- Creating _users db:
+
+    - Connect to couchdb server bash and run:
+    - curl -X PUT http://admin:password@127.0.0.1:5984/_users
